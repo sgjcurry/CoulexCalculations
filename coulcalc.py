@@ -11,8 +11,8 @@ A_t = int(input("Target mass number A_t: "))
 Z_t = int(input("Target atomic number Z_t: "))
 E_B = float(input("Beam energy per nucleon (MeV/u): "))
 E_B_MeV = E_B * A_p  # Convert to total beam energy
-theta_min = np.radians(float(input("Minimum scattering angle (degrees): ")))
-theta_max = np.radians(float(input("Maximum scattering angle (degrees): ")))
+theta_min = np.radians(float(input("Minimum scattering angle (COM, degrees): ")))
+theta_max = np.radians(float(input("Maximum scattering angle (COM, degrees): ")))
 log_input = input("Logarithmic y-scale? (y/n): ").strip().lower()
 log = log_input == 'y'
 y_max = float(input("Y-axis maximum (fm): "))
@@ -20,7 +20,7 @@ x_max = float(input("X-axis maximum (degrees): "))
 
 # --- Constants ---
 r0 = 1.25
-y_min = 0.01
+y_min = np.log(0.01)
 x_min = 0.01
 
 # --- Nuclear radius function ---
@@ -48,6 +48,7 @@ elif diff_percent < 5:
     print(f"\n[CAUTION] Coulomb Excitation distance is marginally safe ({diff_percent:.2f}%).")
 else:
     print("\n[OK] Safe Coulomb Excitation distance is maintained.")
+    print(f"Safe within ({diff_percent:.2f}%).")
 
 print(f"Cline's Safe Distance = {d_min:.2f} fm")
 print(f"Minimum Distance of Approach = {d_app:.2f} fm")
