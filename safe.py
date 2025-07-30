@@ -1,3 +1,4 @@
+
 import numpy as np
 import matplotlib.pyplot as plt
 
@@ -18,8 +19,8 @@ x_max = float(input("X-axis maximum (degrees): "))
 
 # --- Constants ---
 r0 = 1.25
-y_min = 0
-x_min = 0
+y_min = 0.01
+x_min = 0.01
 
 # --- Nuclear radius function ---
 def radius(A):
