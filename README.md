@@ -4,7 +4,7 @@ Code to determine wether or not a Coulomb excitation experiment will be safe or 
 
 To Run directly:
 ```
-python coulcalc
+python coulcalc.py
 ```
 
 Inputs: 
