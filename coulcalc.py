@@ -15,13 +15,9 @@ theta_min = np.radians(float(input("Minimum scattering angle (COM, degrees): "))
 theta_max = np.radians(float(input("Maximum scattering angle (COM, degrees): ")))
 log_input = input("Logarithmic y-scale? (y/n): ").strip().lower()
 log = log_input == 'y'
-y_max = float(input("Y-axis maximum (fm): "))
-x_max = float(input("X-axis maximum (degrees): "))
 
 # --- Constants ---
 r0 = 1.25
-y_min = np.log(0.01)
-x_min = 0.01
 
 # --- Nuclear radius function ---
 def radius(A):
@@ -73,13 +69,11 @@ plt.axvline(x=np.degrees(theta_max), color='k', linestyle='--', label='Detector 
 plt.axvline(x=np.degrees(theta_min), color='k', linestyle='--')
 plt.axhline(y=d_min, color='k', linestyle='-', label=f"Safe Distance: {d_min:.2f} fm")
 plt.plot([], [], ' ', label=f"Beam Energy = {E_B:.1f} MeV/u")
-
 plt.xlabel('Scattering Angle $θ_{COM}$ (degrees)')
 plt.ylabel('Distance of Approach (fm)')
-
 plt.yscale('log' if log else 'linear')
-plt.ylim(y_min, y_max)
-plt.xlim(x_min, x_max)
+plt.xlim(0,179)
+plt.ylim(10,1000)
 plt.legend(frameon=0)
 plt.tight_layout()
 plt.show()
