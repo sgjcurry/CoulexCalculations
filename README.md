@@ -1,11 +1,28 @@
-# Safe-Coulex
+# Coulex Calculation Code
 
 Code to determine wether or not a Coulomb excitation experiment will be safe or unsafe. Output parameters include Clines safe distance, Minimum Distance of Approach between the projectile and target nuclei, and wether the collision will be safe or not. Input parameters are listed below. An output plot shows the distance of closest approach as a function of recoil particle detection angle. 
 
-To Run directly:
+To Run directly in terminal:
 ```
 python coulcalc.py
 ```
+or using a command line tool:
+```
+mv coulcalc.py COMMAND
+```
+execute
+```
+chmod +x COMMAND
+```
+move to PATH
+```
+sudo mv COMMAND PATH
+```
+to run anywhere:
+```
+COMMAND
+```
+
 
 Inputs: 
 ```
@@ -17,6 +34,4 @@ Beam energy per nucleon (MeV/u):
 Minimum scattering angle (degrees): 
 Maximum scattering angle (degrees): 
 Logarithmic y-scale? (y/n): 
-Y-axis maximum (fm): 
-X-axis maximum (degrees): 
 ```
