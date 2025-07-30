@@ -2,9 +2,9 @@
 
 Code to determine wether or not a Coulomb excitation experiment will be safe or unsafe. Output parameters include Clines safe distance, Minimum Distance of Approach between the projectile and target nuclei, and wether the collision will be safe or not. Input parameters are listed below. An output plot shows the distance of closest approach as a function of recoil particle detection angle. 
 
-To Run:
+To Run directly:
 ```
-python coulcalc.py
+python coulcalc
 ```
 
 Inputs: 
