@@ -1,6 +1,6 @@
 # Coulex Calculation Code
 
-Code to determine wether or not a Coulomb excitation experiment will be safe or unsafe. Output parameters include Clines safe distance, Minimum Distance of Approach between the projectile and target nuclei, and wether the collision will be safe or not. Input parameters are listed below. An output plot shows the distance of closest approach as a function of recoil particle detection angle. 
+This program calculates and visualizes the safe distance of closest approach in a Coulomb excitation experiment between a projectile and a target nucleus. Given inputs such as projectile and target masses, charges, beam energy, and scattering angle range, it determines whether the experimental setup maintains a safe distance to avoid nuclear contact. It also optionally computes and plots the Rutherford scattering differential cross-section and impact parameter related to the scattering angles, helping users understand the interaction dynamics and experimental constraints.
 
 To Run directly in terminal:
 ```
