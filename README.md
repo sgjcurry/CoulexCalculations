@@ -4,11 +4,11 @@ This program calculates and visualizes the safe distance of closest approach in 
 
 To Run directly in terminal:
 ```
-python coulcalc_2.py
+python coulcalc.py
 ```
 or using a command line tool:
 ```
-mv coulcalc_2.py COMMAND
+mv coulcalc.py COMMAND
 ```
 execute
 ```
